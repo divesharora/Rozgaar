@@ -6,7 +6,7 @@
 }
 html {
 	font-size: 10px;
-	font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 	scroll-behavior: smooth;
 }
 a {
@@ -82,11 +82,12 @@ p {
 	height: auto;
 }
 #header .header {
-	min-height: 8vh;
+    min-height: 8vh;
+    background:#272343;
 	transition: .3s ease background-color;
 }
 #header .header ::after {
-	background-color: #e3f6f5;
+	background-color: #272343;
 	opacity: 0.3;
 }
 
@@ -203,139 +204,22 @@ p {
 }
 /* End Header section */
 
-/* Hero Section */
-#hero {
-	background-image: url(./img/hero-bg.jpg);
-	background-size: cover;
-	background-position: top center;
-	position: relative;
-	z-index: 1;
-}
-#hero::after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	background-color: #272343;
-	opacity: .5;
-	z-index: -1;
-}
-#hero .hero {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 50px;
-	justify-content: flex-start;
-}
-#hero h1 {
-	display: block;
-	width: fit-content;
-	font-size: 50px;
-	position: relative;
-	color: white;
-
-}
-/* End Hero Section */
-
-/* Services Section */
-#services .services {
+/* Projects section */
+#logins .logins {
 	flex-direction: column;
-	text-align: center;
-	max-width: 1500px;
-	margin: 0 auto;
-	padding: 100px 0;
-	transition: 0.5s;
-}
-#services .service-top {
-	max-width: 1000px;
-	margin: 0 auto;
-}
-
-#services .service-item p {
-	color: white;
-	text-align: justify;
-}
-/* End Services Section */
-
-
-/* About Section */
-
-#about{
-	background-image: url(./img/about.png);
-	background-size: cover;
-	margin-left: 150px;
-	margin-right: 150px;
-	background-position: top center;
-	position: relative;
-	transition: 0.7s;
-	z-index: 1;
-}
-#about .about {
-	flex-direction: column-reverse;
-	text-align: center;
 	max-width: 1350px;
 	margin: 0 auto;
-	padding: 100px 20px;
+	padding: 100px 0;
 }
-
-#about:hover{
-	background-image: url(./img/about1.png);
-	transition: 0.7s;
-}
-
-
-#about .col-right {
-	width: 100%;
-}
-
-#about .col-right p {
-	color: white;
-	font-size: 25px;
-	padding-top : 3px;
-	padding-left: 155px;
-	padding-right: 155px;
-	text-align: center;
-}
-#about .col-right h1{
-	color: whitesmoke;
-}
-/* End About Section */
-
-/* contact Section */
-#contact .contact {
-	flex-direction: column;
-	max-width: 1200px;
+#logins :hover {
+	background:#e3f6f5;
 	transition: 0.5s;
-	margin: 0 auto;
+}
+#logins .logins-header h1 {
+	margin-bottom: 50px;
 }
 
-
-#contact .contact-items {
-	width: 800px;
-	margin-left:-500px;
-	height: 400px;
-}
-#contact .contact-item {
-	width: 100%;
-	padding: 20px;
-	text-align: center;
-	border-radius: 10px;
-	padding: 30px;
-	margin: 10px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	box-shadow: 0px 0px 18px 0 #0000002c;
-	transition: .3s ease box-shadow;
-}
-#contact .contact-item:hover {
-	box-shadow: 0px 0px 5px 0 #0000002c;
-}
-
-
-/*End contact Section */
+/* End Projects section */
 
 /* Footer */
 #footer {
@@ -377,6 +261,7 @@ p {
 	font-size: 1.3rem;
 }
 /* End Footer */
+
 /* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
 	/* header */
