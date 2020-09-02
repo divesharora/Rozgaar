@@ -1,70 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="icon" type="image/svg" href="./img/ico.png">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="login.css">
+	<title>SignUp and Login</title>
+  <link rel="stylesheet" type="text/css" href="login.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
-    <!-- Header -->
-  <section id="header">
-    <div class="header container">
-      <div class="nav-bar">
-        <div class="brand">
-          <a href="index.html #hero"><h1><span>Rozgaar</h1></a>
-        </div>
-        <div class="nav-list">
-          <div class="hamburger"><div class="bar"></div></div>
-          <ul>
-            <li><a href="index.html" data-after="Home">Home</a></li>
-            <li><a href="index.html #services" data-after="Service">Services</a></li>
-            <li><a href="search.html" data-after="Projects">search</a></li>
-            <li><a href="index.html #about" data-after="About">About</a></li>
-            <li><a href="index.html #contact" data-after="Contact">Contact</a></li>
-            <li><a href="login.html" style="color: #f8bd7f;">Login</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+<div class="container" id="container">
+<div class="form-container sign-up-container">
 
-<!-- login Section -->
-<section id="loginss">
-    <div class="logins container">
-      <div class="logins-header">
-        <h1 class="section-title">Recent <span>Projects</span></h1>
-      </div>
-    </div>
-  </section>
-  <!-- End login Section -->
+<form action="dash.html" method="POST">
+	<h1>Create Account</h1>
+	<div class="social-container">
+		<a href="#" class="social"><i class="fa fa-facebook"></i></a>
+		<a href="#" class="social"><i class="fa fa-google"></i></a>
+		<a href="#" class="social"><i class="fa fa-linkedin"></i></a>
+	</div>
+	<span>or use your email for registration</span>
+	<input type="text" name="name" placeholder="Name" required>
+	<input type="email" name="email" placeholder="Email" required>
+	<input type="password" name="password" placeholder="Password" required><br>
+	<button class="right">Sign Up</button>
+</form>
+</div>
+<div class="form-container sign-in-container">
+	<form action="dash.html">
+		<h1>Sign In</h1>
+		<div class="social-container">
+		<a href="#" class="social"><i class="fa fa-facebook"></i></a>
+		<a href="#" class="social"><i class="fa fa-google"></i></a>
+		<a href="#" class="social"><i class="fa fa-linkedin"></i></a>
+	</div>
+	<span>or use your account</span>
+	<input type="email" name="email" placeholder="Email" required>
+	<input type="password" name="password" placeholder="Password" required>
+	<button class="left">Sign In</button>
+	</form>
+</div>
+<div class="overlay-container">
+	<div class="overlay">
+		<div class="overlay-panel overlay-left">
+			<h1>Welcome Back!</h1>
+			<p>To keep connected with us please login with your personal details.</p>
+			<button class="ghost" id="signIn">Sign In</button>
+		</div>
+		<div class="overlay-panel overlay-right">
+			<h1>Hello, Friend!</h1>
+			<p>Enter your details and start an awesome journey.</p>
+			<button class="ghost" id="signUp">Sign Up</button>
+		</div>
+	</div>
+</div>
+</div>
 
-  <!-- Footer -->
-  <section id="footer">
-    <div class="footer container">
-      <div class="brand"><h1>Rozgaar</h1></div>
-      <div class="social-icon">
-        <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"/></a>
-        </div>
-        <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"/></a>
-        </div>
-        <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png"/></a>
-        </div>
-        <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png"/></a>
-        </div>
-      </div>
-      <p>Copyright © 2020 Rozgaar. All rights reserved</p>
-    </div>
-  </section>
-  <!-- End Footer -->
+<script type="text/javascript">
+	const signUpButton = document.getElementById('signUp');
+	const signInButton = document.getElementById('signIn');
+	const container = document.getElementById('container');
 
-  <script src="./login.js"></script>
+	signUpButton.addEventListener('click', () => {
+		container.classList.add("right-panel-active");
+	});
+	signInButton.addEventListener('click', () => {
+		container.classList.remove("right-panel-active");
+	});
+</script>
+
+<script src="./login.js"></script>
 </body>
 </html>
