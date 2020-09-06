@@ -236,6 +236,17 @@ p {
 	color: white;
 
 }
+
+.work{
+	margin-left: 5px;
+	display: block;
+	font-size: 30px;
+	width: fit-content;
+	position: relative;
+	color: #f8bd7f;
+}
+
+
 /* End Hero Section */
 
 /* Services Section */

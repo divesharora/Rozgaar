@@ -1,3 +1,23 @@
+// workers  so far
+function animateValue( ) {
+    var end=5000;
+    var start=0;
+    var duration=1000;
+    var range = end-start;
+    var current = start;
+    var increment = end > start? 1: -1;
+    var stepTime = Math.abs(Math.floor(duration / range));
+    var obj = document.querySelector(".work");
+    var timer = setInterval(function() {
+        current += increment;
+        obj.innerHTML = "Workers helped so far:  "+current+"+";
+        if (current == end) {
+            clearInterval(timer);
+        }
+    }, stepTime);
+}
+
+ // nav bar
 const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
 const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
 const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
@@ -72,4 +92,5 @@ function validatenoblank()
                 return false;
             }
 
-        }
+		}
+		
