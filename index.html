@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg" href="./img/ico.png">
   <title>Home</title>
@@ -76,8 +77,39 @@
     <div class="contact container">
       <div><h1 class="section-title">Get In <span>Touch</span></h1></div>
       <div class="contact-items">
-        <div class="contact-item"></div>
-         
+
+              <div class="conleft">
+                <div class="contact-form">
+                    <form action="" onsubmit="return validatenoblank(); return validateemail();">
+                            <div class="col">
+                                <input type="text" class="form-control" id="uname" placeholder="Enter your name">
+                                <span></span><span>
+                                  <input type="email" class="form-control" id="uemail" placeholder="Enter your email address">
+                              </span>
+                            </div>
+                        <div class="contxt">
+                            <textarea class= "form-control" id="umessage" rows="10" placeholder="Enter your message"></textarea>
+                        </div>
+                        <button type="submit" class="conbtn">Send</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="conright">
+    
+              <div class="address">
+                  <h3>Address</h3>
+                  <p>Rozgaar Private Limited 7th Floor, 9A Building, DLF Tower 8th Rd, DLF CyberHub, Gurugram, Haryana, 122002, India</p>
+              </div>
+              <div class="cd">
+                  <ul class="fa-ul">
+                      <li><span class="fa-li"><i class="fas fa-mobile-alt"></i></span>0123 450 5000</li>
+                      <li><span class="fa-li"><i class="fas fa-map-marker-alt"></i></span>9A, DLF Tower 8th Road, Gurugram, Haryana, 122002</li>
+                      <li><span class="fa-li"><i class="fas fa-paper-plane"></i></span>info@Rozgaar.com</li>
+                  </ul>
+              </div>
+
+          </div>
         </div>
       </div>
     </div>
@@ -108,5 +140,6 @@
   <!-- End Footer -->
   <script src="./index.js"></script>
   <script src="./login.js"></script>
+  
 </body>
 </html>
