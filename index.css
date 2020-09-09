@@ -72,7 +72,9 @@ p {
 	font-family: open Arial, Helvetica, sans-serif;
 }
 
+
 /* Header section */
+
 #header {
 	position: fixed;
 	z-index: 1000;
